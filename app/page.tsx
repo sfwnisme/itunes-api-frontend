@@ -1,4 +1,5 @@
 import SearchContainer from "@/components/search-container/SearchContainer";
+import { HomeIcon, SearchIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -14,9 +15,8 @@ export default async function Home() {
           </div>
         </Link>
         <ul className="flex flex-col">
-          <li><Link href="/" className="text-slate-50 font-medium flex p-2 hover:bg-slate-800 rounded-md">Home</Link></li>
-          <li><Link href="/" className="text-slate-50 font-medium flex p-2 hover:bg-slate-800 rounded-md">Discover</Link></li>
-          <li><Link href="/" className="text-slate-50 font-medium flex p-2 hover:bg-slate-800 rounded-md">Search</Link></li>
+          <li><Link href="/" className="text-slate-50 font-medium flex p-2 hover:bg-slate-800 rounded-md gap-2 items-center text-sm"><HomeIcon size={20} />Home</Link></li>
+          <li><Link href="/" className="text-slate-50 font-medium flex p-2 hover:bg-slate-800 rounded-md gap-2 items-center text-sm"><SearchIcon size={20} />Discover</Link></li>
         </ul>
       </aside>
       <main className="h-full w-full mb-10 flex-1 overflow-x-hidden relative">
