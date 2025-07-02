@@ -1,7 +1,7 @@
 "use client"
 import { IMedia } from '@/types'
 import React from 'react'
-import MediaCard from '../mediaCard/MediaCard'
+import MediaCard from '../media-card/MediaCard'
 
 type Props = {
   media: IMedia[]
