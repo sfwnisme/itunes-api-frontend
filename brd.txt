@@ -1,0 +1,11 @@
+this application is to get the data from the itunes api by search params, and display the data that returned from the itunes api on the frontend.
+
+this application should return the data smoothly without lag, and apply the debouncing, to reduce the latency and the lag.
+
+it should have a layout like "https://podbay.fm/",
+
+Features: 
+- in the main page it should show the recent media
+- the ability to search using search input, and return the data dynamically without a button to submit the search
+- in the search feature it should change the url depends on the search params that the user input.
+
