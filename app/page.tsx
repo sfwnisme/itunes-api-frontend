@@ -7,10 +7,12 @@ export default async function Home() {
   return (
     <div className="flex min-h-full">
       <aside className="border-r border-slate-600 min-w-[200px] h-[100dvh] p-4 sticky top-0 hidden md:block">
-        <div className="flex items-center gap-2 pb-8">
-          <Image src="/logoipsum-327.png" alt="logo" width={32} height={32} />
-          <h1 className="text-2xl font-bold">Itunes</h1>
-        </div>
+        <Link href="/" >
+          <div className="flex items-center gap-2 pb-8">
+            <Image src="/logoipsum-327.png" alt="logo" width={32} height={32} />
+            <h1 className="text-2xl font-bold">Itunes</h1>
+          </div>
+        </Link>
         <ul className="flex flex-col">
           <li><Link href="/" className="text-slate-50 font-medium flex p-2 hover:bg-slate-800 rounded-md">Home</Link></li>
           <li><Link href="/" className="text-slate-50 font-medium flex p-2 hover:bg-slate-800 rounded-md">Discover</Link></li>
