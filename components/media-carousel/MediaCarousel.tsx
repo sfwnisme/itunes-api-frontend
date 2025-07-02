@@ -4,7 +4,7 @@ import { EmblaOptionsType } from 'embla-carousel'
 import useEmblaCarousel from 'embla-carousel-react'
 import { NextButton, PrevButton, usePrevNextButtons } from '../carousel/EmblaCarouselArrowButtons'
 import { IMedia } from '@/types'
-import MediaCard from '../mediaCard/MediaCard'
+import MediaCard from '../media-card/MediaCard'
 
 type PropType = {
   slides: IMedia[],
