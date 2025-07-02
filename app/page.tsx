@@ -6,7 +6,7 @@ export default async function Home() {
 
   return (
     <div className="flex min-h-full">
-      <aside className="border-r border-slate-600 min-w-[200px] h-screen p-4 sticky top-0 hidden md:block">
+      <aside className="border-r border-slate-600 min-w-[200px] h-[100dvh] p-4 sticky top-0 hidden md:block">
         <div className="flex items-center gap-2 pb-8">
           <Image src="/logoipsum-327.png" alt="logo" width={32} height={32} />
           <h1 className="text-2xl font-bold">Itunes</h1>
