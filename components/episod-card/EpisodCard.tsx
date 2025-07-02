@@ -9,7 +9,7 @@ type Props = {
   media: PodcastEpisode
 }
 
-export default function EpisodCard({ media: { trackId, trackName, collectionName, trackViewUrl, trackTimeMillis, releaseDate, artworkUrl160, artworkUrl60, artworkUrl600 } }: Props) {
+export default function EpisodCard({ media: { trackId, trackName, collectionName, trackViewUrl, artworkUrl160, artworkUrl60, artworkUrl600 } }: Props) {
   return (
     <div className="inline-flex gap-2 p-1 border-b-1 border-slate-800 w-full" id={trackId.toString()}>
       <div className='relative group cursor-pointer'>

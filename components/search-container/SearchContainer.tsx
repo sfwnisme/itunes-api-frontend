@@ -1,6 +1,6 @@
 "use client"
 import { IMedia, PodcastEpisode } from '@/types'
-import { getEpisodes, getPodcasts, search } from '@/utils/actions'
+import { getEpisodes, getPodcasts } from '@/utils/actions'
 import React, { useEffect, useState } from 'react'
 import Input from '../input/Input'
 import LoadingIcon from '../loading-icon/LoadingIcon'
@@ -8,10 +8,11 @@ import DefaultPage from '../default-page/DefaultPage'
 import { useRouter, useSearchParams } from 'next/navigation'
 import MediaCarousel from '../media-carousel/MediaCarousel'
 import EpisodesList from '../episodes-list/EpisodesList'
+import { Suspense } from 'react'
 
-function debounce(cb: (...args: any[]) => void, delay: number) {
+function debounce(cb: (...args: string[]) => void, delay: number) {
   let timeoutId: NodeJS.Timeout;
-  return function (...args: any[]) {
+  return function (...args: string[]) {
     if (timeoutId) clearTimeout(timeoutId)
     timeoutId = setTimeout(() => {
       cb(...args)
@@ -19,7 +20,7 @@ function debounce(cb: (...args: any[]) => void, delay: number) {
   }
 }
 
-export default function SearchContainer() {
+function SearchContainerInner() {
   const router = useRouter()
   const searchParams = useSearchParams()
   const urlSearchTerm = searchParams.get('q') || ""
@@ -69,6 +70,7 @@ export default function SearchContainer() {
     }
     router.push(`?${params.toString()}`)
   }, 500)
+
   return (
     <div className='relative'>
       <nav className="p-4 mb-12">
@@ -94,5 +96,13 @@ export default function SearchContainer() {
         }
       </article>
     </div>
+  )
+}
+
+export default function SearchContainer() {
+  return (
+    <Suspense fallback={<LoadingIcon />}>
+      <SearchContainerInner />
+    </Suspense>
   )
 }

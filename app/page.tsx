@@ -24,27 +24,4 @@ export default async function Home() {
   );
 }
 
-export const example = {
-  "wrapperType": "track",
-  "kind": "music-video",
-  "artistId": 1459319359,
-  "trackId": 1612840305,
-  "artistName": "Omah Lay & Justin Bieber",
-  "trackName": "Attention Attention Attention",
-  "trackCensoredName": "Attention",
-  "artistViewUrl": "https://music.apple.com/us/artist/omah-lay/1459319359?uo=4",
-  "trackViewUrl": "https://music.apple.com/us/music-video/attention/1612840305?uo=4",
-  "previewUrl": "https://video-ssl.itunes.apple.com/itunes-assets/Video116/v4/52/67/cc/5267cc9f-ea69-a5e7-5a22-feb0844e05cc/mzvf_18335047271308154097.640x480.h264lc.U.p.m4v",
-  "artworkUrl30": "https://is1-ssl.mzstatic.com/image/thumb/Video126/v4/b9/e7/9f/b9e79fc7-9aa0-6c88-5e92-232b1d72d305/USWBV2200111.sca1.jpg/30x30bb.jpg",
-  "artworkUrl60": "https://is1-ssl.mzstatic.com/image/thumb/Video126/v4/b9/e7/9f/b9e79fc7-9aa0-6c88-5e92-232b1d72d305/USWBV2200111.sca1.jpg/60x60bb.jpg",
-  "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Video126/v4/b9/e7/9f/b9e79fc7-9aa0-6c88-5e92-232b1d72d305/USWBV2200111.sca1.jpg/100x100bb.jpg",
-  "collectionPrice": 1.99,
-  "trackPrice": 1.99,
-  "releaseDate": "2022-03-04T08:00:00Z",
-  "collectionExplicitness": "notExplicit",
-  "trackExplicitness": "notExplicit",
-  "trackTimeMillis": 189063,
-  "country": "USA",
-  "currency": "USD",
-  "primaryGenreName": "R&B/Soul"
-}
+

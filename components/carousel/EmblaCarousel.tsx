@@ -4,8 +4,6 @@ import { EmblaOptionsType } from 'embla-carousel'
 import useEmblaCarousel from 'embla-carousel-react'
 import { NextButton, PrevButton, usePrevNextButtons } from './EmblaCarouselArrowButtons'
 import './embla.css'
-import { example } from '@/app/page'
-import MediaCardV3 from '../media-card-v3/MediaCardV3'
 
 type PropType = {
   slides: number[]
@@ -35,7 +33,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
         <div className="embla__container">
           {slides.map((index) => (
             <div className="embla__slide" key={index}>
-              <MediaCardV3 media={example} />
+              {index}
             </div>
           ))}
         </div>
