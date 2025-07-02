@@ -9,6 +9,8 @@ import { useRouter, useSearchParams } from 'next/navigation'
 import MediaCarousel from '../media-carousel/MediaCarousel'
 import EpisodesList from '../episodes-list/EpisodesList'
 import { Suspense } from 'react'
+import Image from 'next/image'
+import Link from 'next/link'
 
 function debounce(cb: (...args: string[]) => void, delay: number) {
   let timeoutId: NodeJS.Timeout;
@@ -73,7 +75,10 @@ function SearchContainerInner() {
 
   return (
     <div className='relative'>
-      <nav className="p-4 mb-12">
+      <nav className="p-4 mb-12 flex items-center gap-4">
+        <Link href="/" className="md:hidden" >
+          <Image src="/logoipsum-327.png" alt="logo" width={32} height={32} />
+        </Link>
         <Input
           value={inputValue}
           onChange={(e) => {
