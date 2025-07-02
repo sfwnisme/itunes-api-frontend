@@ -4,6 +4,7 @@ export interface IMedia {
   artistName: string
   trackViewUrl: string
   previewUrl?: string
+  artworkUrl600?: string
   artworkUrl100?: string
   artworkUrl60?: string
   artworkUrl30?: string
