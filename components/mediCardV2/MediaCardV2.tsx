@@ -17,9 +17,11 @@ export default function MediaCardV2({ media: { trackId, trackName, artistName, t
         <a href={trackViewUrl} className='text-sm font-medium mb-1 hover:underline'>{truncate(trackName, 30)}</a>
         <p className='text-xs font-medium text-slate-400'>{truncate(artistName, 30)}</p>
       </div>
-      <Button>
-        <EllipsisVertical size={18} />
-      </Button>
+      <div className='flex items-center gap-2 self-start pr-2 pt-2'>
+        <Button>
+          <EllipsisVertical size={18} />
+        </Button>
+      </div>
     </div>
   )
 }
