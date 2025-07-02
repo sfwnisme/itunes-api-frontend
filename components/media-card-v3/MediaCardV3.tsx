@@ -11,7 +11,7 @@ type Props = {
 
 export default function MediaCardV3({ media: { trackId, trackName, artistName, trackViewUrl, trackTimeMillis, releaseDate, artworkUrl100, artworkUrl60, artworkUrl30 } }: Props) {
   return (
-    <div className="flex gap-2 w-full items-stretch bg-purple-800/10 rounded-md hover:bg-purple-800/15 transition-colors duration-300 shadow shadow-slate-900" id={trackId.toString()}>
+    <div className="flex gap-2 w-full items-stretch bg-purple-800/10 rounded-md hover:bg-purple-800/15 transition-colors duration-300 shadow shadow-slate-900 overflow-hidden" id={trackId.toString()}>
       <div className='relative group cursor-pointer w-[120px]  min-w-[120px]'>
         <Image placeholder='blur' loading='lazy' blurDataURL={"/lazy-image.png"} src={artworkUrl100 || artworkUrl60 || artworkUrl30 || "/lazy-image.png"} alt="logo" width={120} height={120} className='w-full h-full object-cover rounded-xs' />
         <Play className='z-10 absolute group-hover:opacity-100 opacity-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white' size={42} />
